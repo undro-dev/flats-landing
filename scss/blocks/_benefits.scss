@@ -1,5 +1,17 @@
 .benefits {
 	padding: 120px 0;
+	position: relative;
+
+
+
+	&::after {
+		content: "II";
+
+		left: calc(50% + 555px);
+		transform: translate(-50%, 0%);
+
+		@include decorNumber;
+	}
 }
 
 .benefits__row {
@@ -19,6 +31,4 @@
 	line-height: 1.35;
 	font-family: $font-secondary;
 	font-weight: 300;
-
-
 }
