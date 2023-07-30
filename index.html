@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>LoftHouse</title>
 		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css" />
 	</head>
 	<body>
 		<header class="header">
@@ -158,6 +159,7 @@
 								autocomplete="off"
 							/>
 							<input
+								data-tel-input
 								class="form__input"
 								type="text"
 								placeholder="Ваш телефон"
@@ -179,6 +181,7 @@
 					<a
 						href="https://www.youtube.com/watch?v=Xa1rBQFakoo"
 						class="video__link"
+						data-youtubeLightbox
 					>
 						<img class="video__icon" src="./img/video/play.svg" alt="play" />
 						<img
@@ -215,6 +218,7 @@
 							autocomplete="off"
 						/>
 						<input
+							data-tel-input
 							class="form__input"
 							type="text"
 							placeholder="Ваш телефон"
@@ -290,6 +294,21 @@
 				</div>
 			</div>
 		</footer>
+
+		<div id="youtubelightbox" class="youtubelightbox">
+			<div class="youtubelightbox__centeredchild">
+				<div class="youtubelightbox__videowrapper">
+					<div id="youtubelightboxPlayer"></div>
+				</div>
+			</div>
+		</div>
+		<script
+			src="https://api-maps.yandex.ru/2.1/?apikey=a3489710-6eab-4cb1-80b1-b4c635922e86&lang=ru_RU"
+			type="text/javascript"
+		></script>
+		<script src="./libs/phoneMask/mask.js"></script>
+		<script src="./libs/phoneMask/mask_list.js"></script>
+		<script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
 
 		<script src="./js/main.js"></script>
 	</body>
