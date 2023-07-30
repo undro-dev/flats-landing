@@ -6,3 +6,9 @@
 	font-size: 400px;
 	font-family: $font-accent;
 }
+
+@mixin mediaTablet {
+	@media screen and (max-width: $tablet) {
+		@content;
+	}
+}
