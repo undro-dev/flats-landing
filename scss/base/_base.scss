@@ -39,3 +39,15 @@ a {
 	clip-path: inset(50%);
 	white-space: nowrap;
 }
+
+.none {
+	display: none !important;
+}
+
+.title-2 {
+	font-family: $font-accent;
+	color: $accent;
+	font-size: 36px;
+	font-weight: 700;
+
+}
